@@ -1,10 +1,8 @@
-import './App.css';
+import Body from './components/Body';
 
 function App() {
   return (
-    <div className="text-3xl font-bold underline text-red-500">
-      Welcome to My React App!
-    </div>
+    <Body/>
   );
 }
 
