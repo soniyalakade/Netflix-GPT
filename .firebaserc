@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "netflixgpt-c5152"
-  }
+    "default": "netflix-gpt-a4e35"
+  },
+  "targets": {},
+  "etags": {}
 }

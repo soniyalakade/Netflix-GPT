@@ -5,14 +5,14 @@ import { checkValidaData } from '../utils/validate';
 import {createUserWithEmailAndPassword } from "firebase/auth";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../utils/firebase';
-import { useNavigate } from 'react-router-dom';
 import { updateProfile } from "firebase/auth";
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
+import { photoURL } from '../utils/constants';
+import { backgroundImage } from '../utils/constants';
 
 const Login = () => {
 
-    const navigate = useNavigate();
     const dispatch = useDispatch();
     const [isSignInForm, setIsSignInForm] = useState(true);
     const [errorMessage, setErrorMessage] = useState("");
@@ -56,11 +56,10 @@ const Login = () => {
                 const user = userCredential.user;
             
             updateProfile(user, {
-            displayName: name.current.value, photoURL: "https://cdn-icons-png.flaticon.com/512/149/149071.png"
+            displayName: name.current.value, photoURL: photoURL
             }).then(() => {
                 const {uid, email, displayName, photoURL} = auth.currentUser;
                 dispatch(addUser({uid: uid, email: email, displayName: displayName, photoURL: photoURL}));
-                navigate("/browse");
             }).catch((error) => {
                 setErrorMessage("Profile update failed. Please try again.");
             });
@@ -84,7 +83,6 @@ const Login = () => {
             )
             .then((userCredential) => {
                 console.log("User signed in:", userCredential.user);
-                navigate("/browse");
             })
             .catch((error) => {
                 console.log("Sign In Error:", error.code);
@@ -118,7 +116,7 @@ const Login = () => {
                 <div
                     className="w-full h-screen bg-cover bg-center"
                     style={{
-                    backgroundImage: `url("https://assets.nflxext.com/ffe/siteui/vlv3/4371a395-0e42-46ae-be36-5755eebc638b/web/IN-en-20260209-TRIFECTA-perspective_3a6d8659-ddfe-4547-9584-dce64c02c230_large.jpg")`
+                    backgroundImage: `url(${backgroundImage})`,
                     }}
                 >
                     <div className="w-full h-full bg-black bg-opacity-70"></div>
