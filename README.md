@@ -19,7 +19,16 @@
 - BugFix: If the user is not logged in Redirect /browse to Login Page and vice-versa
 - Unscribed to the onAuthStateChanged callback
 - Add hardcoded values to the constants file
-- 
+- Register TMDB API & create an app & get access token
+- Get Data from TMDB now playing list API
+- Custom Hooks for nowPlayingMovies
+- Update store with movies data
+- Create movieSlice
+- Planning for MainContainer & Secondary container
+- Fetch Data from Trailer Video
+- Updated Store with Trailer Video Data
+- Embeded the youtube vision and make it autoplay
+- Tailwind Classes to make main container look awesome
 
 # Features
 - Login/Signup Page

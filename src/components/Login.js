@@ -82,10 +82,8 @@ const Login = () => {
             password.current.value
             )
             .then((userCredential) => {
-                console.log("User signed in:", userCredential.user);
             })
             .catch((error) => {
-                console.log("Sign In Error:", error.code);
 
                 switch (error.code) {
                     case "auth/invalid-credential":

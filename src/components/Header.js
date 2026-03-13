@@ -39,7 +39,7 @@ const Header = () => {
     }, []);
 
   return (
-    <div className='absolute top-0 left-0 w-full p-2 pl-32 flex items-center justify-between z-20'>
+    <div className='absolute top-0 left-0 w-full p-2 pl-32 flex items-center justify-between z-20 bg-gradient-to-b from-black via-black/70 to-transparent'>
       
       <img 
         className='w-48 h-auto object-contain'
@@ -48,7 +48,7 @@ const Header = () => {
       />
 
       {user && (
-        <div className='flex pr-4 items-center'>
+        <div className='flex pr-4 items-center '>
           <img 
             className='w-12 h-12 ml-4 rounded-full'
             alt="userIcon"
