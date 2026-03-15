@@ -39,7 +39,7 @@ const Header = () => {
     }, []);
 
   return (
-    <div className='absolute top-0 left-0 w-full p-2 pl-32 flex items-center justify-between z-20 bg-gradient-to-b from-black via-black/70 to-transparent'>
+    <div className='absolute top-0 left-0 w-full p-2 pl-32 flex items-center justify-between z-20 bg-gradient-to-b from-black via-black/60 to-transparent'>
       
       <img 
         className='w-48 h-auto object-contain'

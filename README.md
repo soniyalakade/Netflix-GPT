@@ -29,6 +29,7 @@
 - Updated Store with Trailer Video Data
 - Embeded the youtube vision and make it autoplay
 - Tailwind Classes to make main container look awesome
+- Build seconadry component
 
 # Features
 - Login/Signup Page
