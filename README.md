@@ -30,6 +30,11 @@
 - Embeded the youtube vision and make it autoplay
 - Tailwind Classes to make main container look awesome
 - Build seconadry component
+- Build Movie List
+- Build Movie Card
+- TMDB Image CDN URL
+- Made the browser page amzing with tailwind css
+- usePopularMovies, useNowPlayingMovies, useTopRatedMovies, useTrendingMovies, useUpcomingMovies custom hook
 
 # Features
 - Login/Signup Page
