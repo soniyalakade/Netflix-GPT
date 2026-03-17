@@ -35,6 +35,7 @@
 - TMDB Image CDN URL
 - Made the browser page amzing with tailwind css
 - usePopularMovies, useNowPlayingMovies, useTopRatedMovies, useTrendingMovies, useUpcomingMovies custom hook
+- GPT Search feature
 
 # Features
 - Login/Signup Page
